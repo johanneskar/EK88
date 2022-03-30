@@ -15,5 +15,5 @@ first_name = player [0:player.find (" ")]
 last_name_len = (len (player [player.find (" "):])) - 1
 name_short = first_name [0:1] + "." + player [player.find (" "):]
 chant = (first_name + "! ") * (len (first_name) -1) + first_name + "!"
-good_chant = ((first_name + "! ") * len (first_name) != chant)
+good_chant = (chant[-1] != " ")
 print (good_chant)
